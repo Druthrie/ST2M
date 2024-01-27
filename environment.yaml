@@ -1,4 +1,4 @@
-name: STDM_env
+name: ST2M_env
 channels:
   - pytorch
   - defaults
