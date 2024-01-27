@@ -1,0 +1,6 @@
+__pycache__/
+checkpoints/*
+dataset/*
+eval_log/*
+eval_results/*
+log/*
