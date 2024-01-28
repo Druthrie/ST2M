@@ -1,0 +1,3 @@
+climb down stairs backward#3
+climb up stairs#3
+turn around right#2

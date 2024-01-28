@@ -1,0 +1,4 @@
+jog lightly#2
+turn around#1
+kick out left foot#2
+kneel#2

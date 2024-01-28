@@ -1,0 +1,5 @@
+run#3
+turn right#2
+hop backwards#2
+bent and walk#2
+lie down on floor#4

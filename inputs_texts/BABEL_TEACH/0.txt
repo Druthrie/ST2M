@@ -1,0 +1,5 @@
+sit#1
+touch mouth#1
+crawl#5
+stand#2
+walk#3

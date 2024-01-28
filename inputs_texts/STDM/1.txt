@@ -1,0 +1,2 @@
+person jogs from left to right on narrow strip#7
+a person takes several steps forwards#5
