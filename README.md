@@ -105,23 +105,23 @@ python st2m_train_tex_mot_match.py --name match_model_name --gpu_id 0 --dataset_
 ### BABEL_TEACH dataset
 #### without slerp operation
 ```shell
-python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_BABEL_TEACH --text_file ./input_texts/BABEL_TEACH/0.txt --ext 0 --repeat_times 3
+python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_BABEL_TEACH --text_file ./inputs_texts/BABEL_TEACH/0.txt --ext 0 --repeat_times 3
 ```
 
 #### with slerp operation
 ```shell
-python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_BABEL_TEACH --text_file ./input_texts/BABEL_TEACH/0.txt --ext 0_slerp --repeat_times 3 --do_slerp
+python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_BABEL_TEACH --text_file ./inputs_texts/BABEL_TEACH/0.txt --ext 0_slerp --repeat_times 3 --do_slerp
 ```
 
 ### STDM dataset
 #### without slerp operation
 ```shell
-python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name STDM --name trainV13_LV1LT1LK001LA01_STDM --text_file ./input_texts/STDM/0.txt --ext 0 --repeat_times 3
+python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name STDM --name trainV13_LV1LT1LK001LA01_STDM --text_file ./inputs_texts/STDM/0.txt --ext 0 --repeat_times 3
 ```
 
 #### with slerp operation
 ```shell
-python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_STDM --text_file ./input_texts/STDM/0.txt --ext 0_slerp --repeat_times 3 --do_slerp
+python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_STDM --text_file ./inputs_texts/STDM/0.txt --ext 0_slerp --repeat_times 3 --do_slerp
 ```
 
 
