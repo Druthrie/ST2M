@@ -22,10 +22,10 @@ dependencies:
   - brotlipy=0.7.0=py37h27cfd23_1003
   - bzip2=1.0.8=h7b6447c_0
   - c-ares=1.18.1=h7f8727e_0
-  - ca-certificates=2023.11.17=hbcca054_0
+  - ca-certificates=2022.10.11=h06a4308_0
   - cachetools=4.2.2=pyhd3eb1b0_0
   - catalogue=2.0.6=py37h06a4308_0
-  - certifi=2023.11.17=pyhd8ed1ab_0
+  - certifi=2022.9.24=py37h06a4308_0
   - cffi=1.15.0=py37hd667e15_1
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - click=8.0.4=py37h06a4308_0
@@ -90,7 +90,6 @@ dependencies:
   - libtiff=4.2.0=h85742a9_0
   - libunistring=0.9.10=h27cfd23_0
   - libuuid=1.0.3=h7f8727e_2
-  - libuv=1.42.0=h7f98852_0
   - libvpx=1.7.0=h439df22_0
   - libwebp=1.2.2=h55f646e_0
   - libwebp-base=1.2.2=h7f8727e_0
