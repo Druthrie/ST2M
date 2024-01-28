@@ -121,7 +121,7 @@ python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name STDM --name tr
 
 #### with slerp operation
 ```shell
-python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name BABEL_TEACH --name trainV13_LV1LT1LK001LA01_STDM --text_file ./inputs_texts/STDM/0.txt --ext 0_slerp --repeat_times 3 --do_slerp
+python st2m_gen_mul_motions_scipy_V2.py --gpu_id 0 --dataset_name STDM --name trainV13_LV1LT1LK001LA01_STDM --text_file ./inputs_texts/STDM/0.txt --ext 0_slerp --repeat_times 3 --do_slerp
 ```
 
 
