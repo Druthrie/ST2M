@@ -6,19 +6,6 @@ Please visit our [**webpage**](https://druthrie.github.io/sequential-texts-to-mo
 
 ![teaser](https://github.com/Druthrie/sequential-texts-to-motion/blob/main/fig/teaser_M29.png)
 
-#### Bibtex
-If you find this code useful in your research, please cite:
-
-```
-@InProceedings{Li_2023_ICCV,
-    author    = {Li, Shuai and Zhuang, Sisi and Song, Wenfeng and Zhang, Xinyu and Chen, Hejia and Hao, Aimin},
-    title     = {Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {9498-9508}
-}
-```
 
 ## Getting started
 
@@ -37,7 +24,7 @@ python -m spacy download en_core_web_sm
 pip install git+https://github.com/openai/CLIP.git
 ```
 
-### 2. Get data
+### 2. Dataset preparation
 
 ```shell
 mkdir ./dataset/
@@ -45,19 +32,19 @@ mkdir ./dataset/
 
 #### BABEL_TEACH
 
-save BABEL_TEACH dataset to ./dataset/
+The BABEL-TEACH dataset are currently not available due to the license of BABEL. We will release the data preprocessing code in the future. 
 
 #### STDM
 
 If you want to request our STDM dataset please fill out the ["The STDM Dataset Release Agreement"](https://github.com/Druthrie/SequentialTexts2Motion/blob/main/dataset_agreement.pdf), send the email to sisizhuang@buaa.edu.cn
 
-unzip and place BABEL_TEACH dataset to ./dataset/
+Unzip and place BABEL_TEACH dataset to ./dataset/
 
 ### 3. Download the pretrained models
 ```shell
 mkdir ./checkpoints/
 ```
-Download the models of [BABEL_TEACH dataset](https://drive.google.com/file/d/1_KCzpH6BA-7BnL2_QrkJa2CA_RQUAvWR/view?usp=sharing) and [STDM datset](https://drive.google.com/file/d/1q6PgN2Nut7fuAlEXZITA7gBMDehUrkJC/view?usp=sharing), then unzip and place them in `./checkpoints/`, which should be like
+Download the pretrained models of [BABEL_TEACH dataset](https://drive.google.com/file/d/1_KCzpH6BA-7BnL2_QrkJa2CA_RQUAvWR/view?usp=sharing) and [STDM dataset](https://drive.google.com/file/d/1q6PgN2Nut7fuAlEXZITA7gBMDehUrkJC/view?usp=sharing), then unzip and place them in `./checkpoints/`, which should be like
 ```shell
 ./checkpoints/BABEL_TEACH/
 ./checkpoints/BABEL_TEACH/trainV13_LV1LT1LK001LA01_BABEL_TEACH/           # Sequential-text-to-motion generation model
@@ -100,7 +87,7 @@ python st2m_train_tex_mot_match.py --name match_model_name --gpu_id 0 --dataset_
 ```
 
 
-## Generating and Animating 3D Motions
+## Generating 3D Motion Animation
 
 ### BABEL_TEACH dataset
 #### without slerp operation
@@ -134,4 +121,18 @@ python st2m_final_evaluations.py --dataset_name BABEL_TEACH --log_file_name fina
 #### STDM dataset
 ```shell
 python st2m_final_evaluations.py --dataset_name STDM --log_file_name final_contrast
+```
+
+## Bibtex
+If you find this code useful in your research, please cite:
+
+```
+@InProceedings{Li_2023_ICCV,
+    author    = {Li, Shuai and Zhuang, Sisi and Song, Wenfeng and Zhang, Xinyu and Chen, Hejia and Hao, Aimin},
+    title     = {Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {9498-9508}
+}
 ```
