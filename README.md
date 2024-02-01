@@ -7,7 +7,7 @@ Please visit our [**webpage**](https://druthrie.github.io/sequential-texts-to-mo
 ![teaser](https://github.com/Druthrie/sequential-texts-to-motion/blob/main/fig/teaser_M29.png)
 
 
-## Getting started
+## Getting Started
 
 This code was tested on `Ubuntu 20.04.1 LTS` and requires:
 
